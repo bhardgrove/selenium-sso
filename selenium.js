@@ -38,16 +38,16 @@ function ssoTester(url, server) {
 
   currentUrl = driver.getCurrentUrl()
                      .then(function (title) {
-                         title = title.match(/i-iaprca0(\d)/);
+                         title = title.match(/server(\d)/);
                          console.log(title);
-                         driver.get('https://' + title[0]  + '.nordstrom.net:8443/r2w/signOut.do');
+                         driver.get('https://' + title[0]  + '.url.net:8443/r2w/signOut.do');
   });
 }
 
 for (var i = 0; i < execNumber; i++) {
-      ssoTester('http://reportcenter.nordstrom.net/r2wlogon', 'ELB');
-      ssoTester('http://i-iaprca01.nordstrom.net/r2wlogon', 'i-iaprca01');
-      ssoTester('http://i-iaprca02.nordstrom.net/r2wlogon', 'i-iaprca02');
+      ssoTester('http://url1', 'name1');
+      ssoTester('http://url2', 'name2');
+      ssoTester('http://url3', 'name3');
 }
 
 driver.quit();
