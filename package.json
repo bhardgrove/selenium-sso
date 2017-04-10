@@ -1,0 +1,24 @@
+{
+  "name": "sso_tester",
+  "version": "1.0.0",
+  "description": "Log into R2W using SSO and record user ID and take a screenshot",
+  "main": "reportCenter.js",
+  "dependencies": {
+    "request": "^2.81.0",
+    "selenium-webdriver": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "selenium",
+    "node",
+    "js",
+    "r2w",
+    "report",
+    "center"
+  ],
+  "author": "Bob Hardgrove",
+  "license": "MIT"
+}
